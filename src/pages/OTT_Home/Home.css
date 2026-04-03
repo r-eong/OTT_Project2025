@@ -1,0 +1,452 @@
+*{
+    color: #fff;
+}
+/* li > img:hover{
+    border: 3px solid #aaa;
+} */
+.xall{
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 2050px;
+}
+.xall .all{
+    background-color: #0c0c0c ;
+    width: 100%;
+    /* height: 100vh; */
+    position: relative;
+    padding-bottom: 50px;
+}
+.xall .all .mainPart{
+    width: 100%;
+    /* height: 850px; */
+    position: relative;
+}
+.xall .all .mainPart img{
+    display: inline-block;
+    width: 100%;
+    /* height: 754px; */
+}
+.xall .all .mainPart .mainOverlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 0;
+}
+.xall .all .mainPart .content{
+    position: absolute;
+    bottom: 350px;
+    left: 0;
+    padding: 70px;
+}
+.xall .all .mainPart .gra{
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to top,#0c0c0c,#00000000);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+.xall .all .mainPart .content h1{
+    font-size: 71px;
+    margin:0;
+    font-weight: 600;   
+}
+.xall .all .mainPart .content .rankPart{
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+.xall .all .mainPart .content .rankBox{
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-color: red;
+    font-size: 11px;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+}
+.xall .all .mainPart .content .mainPart_rank{
+    font-size:1.6vw;
+    font-weight: 700;
+}
+.xall .all .mainPart .content .mainPart_text{
+    line-height: 25px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    width: 450px;
+    display: -webkit-box;            /* 박스 형태로 전환 */
+    -webkit-box-orient: vertical;    /* 세로 방향으로 설정 */
+    -webkit-line-clamp: 3;           /* 최대 4줄로 제한 */
+    overflow: hidden;                /* 넘치는 텍스트 숨김 */
+
+}
+.xall .all .mainPart .content .play{
+    color: #222;
+    width: 100px;
+    padding: 12px 0;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-right: 15px;
+    cursor: pointer;
+    font-size: 17px;
+}
+.xall .all .mainPart .content .play:hover{
+    background-color: #d9d9d9;
+}
+.xall .all .mainPart .content .detail{
+    color: #fff;
+    width: 115px;
+    padding: 12px 0;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    background-color: rgba(146, 146, 146, 0.7);
+    cursor: pointer;
+    font-size: 17px;
+}
+.xall .all .mainPart .content .detail:hover{
+    background-color: rgba(146, 146, 146, 0.3);
+}
+
+/* 02. 오늘 대한민국의 TOP10 영화 */
+.xall .all .Top10_series{
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 400;
+}
+.xall .all .Top10_series .title02{
+    font-size: 19px;
+    font-weight: 550;
+    margin: 15px 0px;
+}
+.xall .all .Top10_series ul{
+    display: flex;
+    gap: 6px;
+    width: 1780px;
+    padding: 0 50px;
+    position: relative;
+    transition: 1.0s;
+}
+.xall .all .Top10_series ul li{
+    width: 350px;
+    height: 200px;
+    position: relative;
+    margin: 0 186px 0 50px;
+}
+.xall .all .Top10_series ul li .num1{
+    font-size: 206px;
+    line-height: 192px;
+    margin: 0;
+    color: #0b0b0b;
+    position: absolute;
+    bottom: 0;
+    left: -89px;
+    z-index: 50;
+}
+.xall .all .Top10_series ul li .num2{
+    font-size: 206px;
+    line-height: 192px;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: -89px;
+    z-index: 40;
+    -webkit-text-stroke: 7px #626262;
+}
+.xall .all .Top10_series ul li img{
+    /* width: 295px; */
+    height: 200px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    position: absolute;
+    z-index: 60;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+}
+/* 슬라이드 */
+.xall .all .Top10_series .slide{
+    display: flex;
+    width: 1780px;
+    position: relative;
+    overflow: hidden;
+    
+}
+/* Top 10 슬라이드 버튼 (left btn) */
+.xall .all .Top10_series .left{
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 200px;
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+    border: 1px solid transparent;
+    cursor: pointer;
+    z-index: 500;
+}
+.xall .all .Top10_seriesst03 .left:hover{
+    border: 1px solid #fff;
+    background-color: rgba(0,0,0,0.5);
+}
+/* Top 10 슬라이드 버튼 (right btn) */
+.xall .all .Top10_series .right{
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 200px;
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+    border: 1px solid transparent;
+    cursor: pointer;
+    z-index: 500;
+}
+.xall .all .Top10_series .right:hover{
+    /* border: 1px solid #fff; */
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* 하단 장르별 리스트 */
+.xall .all .list{
+    margin-left: 70px;
+}
+
+.xall .all .list .list03 .slide .like_list{
+    width: 430px;
+    height : 200px;
+    border-radius : 5px;
+    cursor: pointer;
+    background-color: rgba(126, 126, 126, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.xall .all .list .list03 .slide .like_list:hover{
+    background-color: rgba(98, 98, 98, 0.2);
+}
+.xall .all .list .list03 .slide .like_list p{
+    font-size: 60px;
+    color: #838383;
+    /* border: 2px solid #838383; */
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;           /* p 태그 기본 margin 제거 */
+    padding-bottom: 8px;        /* padding이 있다면 제거 */
+}
+
+/* 03. 액션 & 어드벤처 영화 */
+.xall .all .list .list03{
+    margin-bottom: 40px;
+}
+.xall .all .list .list03 .textPart{
+    cursor: pointer;
+    display: flex;
+    margin-bottom: 15px;
+}
+.xall .all .list .list03 .textPart .title03{
+    font-size: 19px;
+}
+.xall .all .list .list03 .textPart .seeAll{
+    margin-left: 20px;
+    padding-top: 1.5px;
+    cursor: pointer;
+    color: #54b9c5;
+}
+.xall .all .list .list03 .action_movie{
+    display: flex;
+    gap: 6px;
+    width: 1780px;
+    transition: 0.5s;
+}
+.xall .all .list .list03 .action_movie li{
+    position: relative;
+}
+.xall .all .list .list03 .action_movie li:hover::after{
+    content: '+';
+    font-size: 100px;
+    font-weight: 300;
+    color: #efefef;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height : 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0,0,0,0.4);
+    z-index: 500;
+    cursor: pointer;
+}
+.xall .all .list .list03 .action_movie li img{
+    width: 350px;
+    height : 200px;
+    border-radius : 5px;
+    cursor: pointer;
+    /* position: relative; */
+}
+/* 슬라이드 */
+.xall .all .list .list03 .slide{
+    display: flex;
+    width: 1774px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+/* 슬라이드 버튼 (left btn) */
+.xall .all .list .list03 .left{
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 200px;
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+    border: 1px solid transparent;
+    cursor: pointer;
+    z-index: 600;
+}
+.xall .all .list .list03 .left:hover{
+    /* border: 1px solid #fff; */
+    background-color: rgba(0,0,0,0.5);
+}
+/* 슬라이드 버튼 (right btn) */
+.xall .all .list .list03 .right{
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 200px;
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+    border: 1px solid transparent;
+    cursor: pointer;
+    z-index: 600;
+}
+.xall .all .list .list03 .right:hover{
+    /* border: 1px solid #fff; */
+    background-color: rgba(0,0,0,0.5);
+}
+.xall .all .list .list03 button i{
+    font-size: 20px;
+}
+
+/* 모두보기 모달창 */
+.xall .all .overlay{
+    position: fixed;
+    top: 0;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 1000;
+}
+.xall .all .overlay .modal{
+    width: 1136px;
+    height: 700px;
+    max-height: 700px; /* 원하는 높이 제한 */
+    overflow-y: auto; /* 세로 스크롤 허용 */
+    box-sizing: border-box;
+    background-color: rgb(24, 24, 24);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    /* position: relative; */
+    z-index: 200;
+}
+/* 스크롤바 스타일 (선택) */
+.xall .all .overlay .modal::-webkit-scrollbar {
+  width: 6px;
+}
+.xall .all .overlay .modal::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 3px;
+}
+.xall > p{
+    display: inline-block;
+    cursor: pointer;
+    font-size: 27px;
+    font-weight: 300;
+    padding: 15px;
+    position: fixed;
+    top: 130px;
+    right: 380px;   
+    z-index: 2000;
+}
+.xall .all .overlay .modal h3{
+    /* display: inline-block; */
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 40px;
+    padding: 60px 0 50px 0;
+    /* padding-bottom: 40px; */
+}
+.xall .all .overlay .modal span{
+    padding: 43px;
+    color: #d9d9d9;
+    font-size: 17px;
+    font-weight: 550;
+}
+.xall .all .overlay .modal .modalList{
+    display: flex;
+    width: 1136px;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 15px 40px 45px;
+    justify-content: flex-start;
+}
+.xall .all .overlay .modal .modalList li img{
+    width: 250px;
+    height: 141px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.xall .all .overlay .modal .modalList li img:hover{
+    transform: scale(1.3);
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+}
+/* 모달 선 그리기 */
+.xall .all .overlay .modal .line{
+    border: 1px solid #474747;
+    margin: 0 43px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.xall .all .overlay .modal strong{
+    position: absolute;
+    z-index: 100;
+    /* top: 1045px; */
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%,-50%);
+    border: 1px solid #474747;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: rgb(24, 24, 24);
+    cursor: pointer;
+}

@@ -1,0 +1,204 @@
+/* body */
+body{
+    background-color: #111;
+}
+/* movieDrama 전체 css */
+.movieDrama_container{
+    width: 2000px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #0c0c0c;
+}
+/* movieDrama 상단 이름 및 버튼 css */
+.sec_top{
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 30px;
+    align-items: center;
+    margin-top: 68px;
+}
+.tagname:hover{
+    text-decoration: underline;
+}
+.sec_top button{
+    width: 70px;
+    height: 30px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+/* movieDrama 메인 이미지 css */
+.movieDrama_container > img{
+    width: 2000px;
+    height: 1000px;
+    /* border: 1px solid red; */
+}
+.movieDrama_container .movieDrama_info{
+    position: absolute;
+    top: 300px;
+    left: 60px;
+}
+.movieDrama_container .movieDrama_info h1{
+    font-size: 50px;
+    color: #fff;
+}
+.movieDrama_container .movieDrama_info p{
+    color: #fff;
+    line-height: 1.5em;
+}
+/* .movieDrama_container .movieDrama_info > button{
+    margin: 30px 5px 0 0;
+    width: 150px;
+    padding: 20px;
+    border: 1px solid #fff;
+    outline: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.movieDrama_container .movieDrama_info .detailInfo{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+} */
+ .movieDrama_container .movieDrama_info .play{
+    color: #222;
+    width: 100px;
+    padding: 12px 0;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-right: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 17px;
+ }
+ .movieDrama_container .movieDrama_info .play:hover{
+    background-color: #d9d9d9;
+ }
+.movieDrama_container .movieDrama_info .detailInfo{
+    color: #fff;
+    width: 115px;
+    padding: 12px 0;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    background-color: rgba(146, 146, 146, 0.7);
+    cursor: pointer;
+    font-size: 17px;
+}
+.movieDrama_container .movieDrama_info .detailInfo:hover{
+    background-color: rgba(146, 146, 146, 0.3);
+}
+.movieDrama_container h1{
+    color: #fff;
+}
+/* movieDrama ul */
+.movieDrama_container .movieDramas{
+    background-color: #0c0c0c;
+    padding-bottom: 60px;
+    margin-top: 150px;
+}
+.movieDrama_container .movieDrama >ul{
+    display: flex;
+    gap: 6px;
+    transition: 0.5s;
+}
+.movieDrama_container h2{
+    color: #333;
+    margin-top: 50px;
+    color: #fff;
+}
+.movieDrama_container ul li img{
+    width: 350px;
+    height: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.movieDrama_container ul li{
+    position: relative;
+}
+.movieDrama_container .movieDrama ul li:hover::after{
+    content: '+';
+    font-size: 100px;
+    font-weight: 300;
+    color: #efefef;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height : 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0,0,0,0.4);
+    z-index: 500;
+    cursor: pointer;
+}
+/* 첫번째 ul li position으로 메인 이미지 위로 띄우기 위함 */
+.movieDrama_container .movieDramas .movieDrama1{
+    position: absolute;
+    top: 900px;
+    left: 0px;
+    z-index: 100;
+}
+.movieDrama_container .movieDramas .h2_1{
+    position: absolute;
+    top: 800px;
+    left: 70px;
+}
+/* 첫번째 ul의 li를 제외한 나머지 ul li */
+.movieDrama_container .movieDramas .movieDrama{
+    display: flex;
+    position: relative;
+    width: 1774px;
+    border-radius: 5px;
+    /* margin: 0 auto; */
+    margin-left: 70px;
+    overflow: hidden;
+}
+.movieDrama_container .movieDramas .h2_2{
+    margin-left: 70px;
+}
+/* 영화 목록 왼쪽으로 이동하는 버튼 css */
+.movieDrama_container .movieDramas .movieDrama .left,
+.movieDrama_container .movieDramas .movieDrama1 .left{
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 200px;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    border: 1px solid transparent;
+    z-index: 600;
+}
+.movieDrama_container .movieDramas .movieDrama .left:hover,
+.movieDrama_container .movieDramas .movieDrama1 .left:hover{
+    /* border: 1px solid #fff; */
+    background-color: rgba(0,0,0,0.7);
+}
+/* 영화 목록 오른쪽으로 이동하는 버튼 css */
+.movieDrama_container .movieDramas .movieDrama .right,
+.movieDrama_container .movieDramas .movieDrama1 .right{
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 200px;
+    background-color: rgba(0,0,0,0.5);;
+    color: #fff;
+    border: 1px solid transparent;
+    z-index: 600;
+}
+.movieDrama_container .movieDramas .movieDrama .right:hover,
+.movieDrama_container .movieDramas .movieDrama1 .lerightft:hover{
+    /* border: 1px solid #fff; */
+    background-color: rgba(0,0,0,0.7);
+}

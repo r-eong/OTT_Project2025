@@ -1,0 +1,231 @@
+/* body */
+body{
+    background-color: #111;
+}
+/* movie 전체 css */
+.movie_container{
+    width: 2000px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #0c0c0c;
+}
+/* movie 상단 이름 및 버튼 css */
+.sec_top{
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 30px;
+    margin-top: 50px;
+    align-items: center;
+    height: 70px;
+    box-sizing: border-box;
+}
+.tagname:hover{
+    text-decoration: underline;
+}
+.sec_top > .dep1 > li > button{
+    width: 100px;
+    height: 40px;
+    background-color: rgba(0,0,0,0.7);
+    color: #fff;
+    border: 1px solid #fff;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.sec_top .dep1{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+.sec_top .dep1 li .MovieDep1{
+    margin-top: 30px;
+}
+.sec_top .dep1 li .dep2{
+    background-color: rgba(0,0,0,0.7);
+    padding: 10px;
+    top: -12px;
+    left: 0;
+}
+.sec_top .dep2 li > button{
+    width: 155px;
+    cursor: pointer;
+    padding: 0 20px;
+    margin-top: 2px;
+}
+.sec_top .dep2 li > button:hover{
+    text-decoration: underline;
+}
+/* movie 메인 이미지 css */
+.movie_container > img{
+    width: 2000px;
+    height: 1000px;
+    /* border: 1px solid red; */
+}
+.movie_container .movie_info{
+    position: absolute;
+    top: 200px;
+    left: 60px;
+}
+.movie_container .movie_info h1{
+    font-size: 50px;
+    color: #fff;
+}
+.movie_container .movie_info p{
+    color: #fff;
+    line-height: 1.5em;
+}
+/* .movie_container .movie_info > button{
+    margin: 30px 5px 0 0;
+    width: 150px;
+    padding: 20px;
+    border: 1px solid #fff;
+    outline: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.movie_container .movie_info .detailInfo{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+} */
+ .movie_container .movie_info .play{
+    color: #222;
+    width: 100px;
+    padding: 12px 0;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-right: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 17px;
+ }
+ .movie_container .movie_info .play:hover{
+    background-color: #d9d9d9;
+ }
+.movie_container .movie_info .detailInfo{
+    color: #fff;
+    width: 115px;
+    padding: 12px 0;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    background-color: rgba(146, 146, 146, 0.7);
+    cursor: pointer;
+    font-size: 17px;
+}
+.movie_container .movie_info .detailInfo:hover{
+    background-color: rgba(146, 146, 146, 0.3);
+}
+.movie_container h1{
+    color: #fff;
+}
+/* movie ul */
+.movie_container .movies{
+    background-color: #0c0c0c;
+    padding-bottom: 60px;
+    margin-top: 150px;
+}
+.movie_container .movie >ul{
+    display: flex;
+    gap: 6px;
+    transition: 0.5s;
+}
+.movie_container h2{
+    color: #333;
+    margin-top: 50px;
+    color: #fff;
+}
+.movie_container ul li img{
+    width: 350px;
+    height: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.movie_container ul li{
+    position: relative;
+}
+.movie_container .movies ul li:hover::after{
+    content: '+';
+    font-size: 100px;
+    font-weight: 300;
+    color: #efefef;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height : 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0,0,0,0.4);
+    z-index: 500;
+    cursor: pointer;
+}
+/* 첫번째 ul li position으로 메인 이미지 위로 띄우기 위함 */
+.movie_container .movies .movie1{
+    position: absolute;
+    top: 900px;
+    left: 0px;
+    z-index: 100;
+}
+.movie_container .movies .h2_1{
+    position: absolute;
+    top: 800px;
+    left: 70px;
+}
+/* 첫번째 ul의 li를 제외한 나머지 ul li */
+.movie_container .movies .movie{
+    display: flex;
+    position: relative;
+    width: 1774px;
+    border-radius: 5px;
+    /* margin: 0 auto; */
+    margin-left: 70px;
+    overflow: hidden;
+}
+.movie_container .movies .h2_2{
+    margin-left: 70px;
+}
+/* 영화 목록 왼쪽으로 이동하는 버튼 css */
+.movie_container .movies .movie .left,
+.movie_container .movies .movie1 .left{
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 200px;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    border: 1px solid transparent;
+    z-index: 600;
+}
+.movie_container .movies .movie .left:hover,
+.movie_container .movies .movie1 .left:hover{
+    /* border: 1px solid #fff; */
+    background-color: rgba(0,0,0,0.7);
+}
+/* 영화 목록 오른쪽으로 이동하는 버튼 css */
+.movie_container .movies .movie .right,
+.movie_container .movies .movie1 .right{
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 200px;
+    background-color: rgba(0,0,0,0.5);;
+    color: #fff;
+    border: 1px solid transparent;
+    z-index: 600;
+}
+.movie_container .movies .movie .right:hover,
+.movie_container .movies .movie1 .lerightft:hover{
+    /* border: 1px solid #fff; */
+    background-color: rgba(0,0,0,0.7);
+}
